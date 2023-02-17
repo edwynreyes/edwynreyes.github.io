@@ -30,14 +30,14 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    color: rgb(94, 0, 108);
+    color: rgb(175, 5, 201);
     text-transform: uppercase;
 }
 .navbar ul li::after{
     content: '';
     height: 3px;
     width: 0;
-    background: #e7852a;
+    background: #2208b9;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -52,7 +52,7 @@
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color:rgb(85, 128, 118);
+    color:rgb(6, 162, 126);
 }
 .content h1{
     margin: 20px auto;
