@@ -1,0 +1,40 @@
+
+body {
+    background-image: url(picture/bwhot.jpg);
+    font-family: western;
+    padding: 20px;
+    align-items: center;
+}
+h2 {
+    font-size: 25px;
+}
+img {
+    display: block;
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.established {
+    font-style: italic;
+}
+h1, h2, p {
+    text-align: center;
+}
+.menu {
+    width: 80%;
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
