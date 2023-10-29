@@ -38,3 +38,18 @@ h1, h2, p {
     align-items: center;
     justify-content: space-between;
 }
+table {
+    width: 100%;
+    font-size: 11pt;
+}
+table, th, td {
+    border: 2px solid #cecece;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+.selected {
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+}
