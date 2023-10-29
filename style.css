@@ -1,12 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 25;
     font-family: western;
 }
 .banner{
     width:100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(131, 196, 160, 0.75),rgba(75, 0, 54, 0.75)),url(picture/flames.png);
+    background-image: linear-gradient(rgba(31, 191, 103, 0.75),rgba(123, 2, 88, 0.75)),url(picture/flames.png);
     background-size: cover;
     background-position: center;
 }
@@ -37,7 +38,7 @@
     content: '';
     height: 3px;
     width: 0;
-    background: #b9087b;
+    background: #b92851;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -69,17 +70,17 @@ button{
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
-    border-radius: 25px;
+    border-radius: 30px;
     font-weight: bold;
     border: 3px solid #00968e;
     background: transparent;
-    color: rgb(0, 0, 0);
+    color: rgb(84, 28, 130);
     cursor: pointer;
     position: relative;
     overflow: hidden;
 }
 span{
-    background: #9f0a63;
+    background: #15944e;
     height: 100%;
     width: 0;
     border-radius: 25px;
