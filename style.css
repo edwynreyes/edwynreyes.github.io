@@ -36,7 +36,7 @@
 }
 .navbar ul li::after{
     content: '';
-    height: 3px;
+    height: 5px;
     width: 0;
     background: #b92851;
     position: absolute;
