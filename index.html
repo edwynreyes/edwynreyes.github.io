@@ -12,6 +12,7 @@
 			</style>
 		</head>
 		<body>
+		<main>
 			<div class="banner">
 				<div class="navbar">
 					<img src="picture/1954Belair.png" class="flames">
@@ -37,7 +38,7 @@
 					</div>
 				</div>	
 			</div>
-			<div class="whitewalls">
+			    <class="whitewalls">
 				<div class="hotrod">
 					<img src="HotRodRush.gif"length="500"width="550">
 					<img src="red.gif"length="280"width="430">
@@ -47,12 +48,18 @@
 				<form action="submit-photo">
 					<fieldset>
 						<legend>What classic is your fav?</legend>
-						<label><input id="chevelle" type="radio" name="chevelle-hotrod" value="choose">Chevelle</label>
-						<label><input id="c10" type="radio" name="c10" value="choose">C10</label>
-						<label><input id="belair" type="radio" name="belair" value="hotrod">Belair</label>
+						<label><input id="chevelle" type="radio" name="chevelle-hotrod" value="choose"> <label for="chevelle">CHEVELLE</label>
+						<label><input id="c10" type="radio" name="c10" value="choose"><label for="c10">C10</label>
+						<label><input id="belair" type="radio" name="belair" value="hotrod"><label for="belair">BELAIR</label>
 					</fieldset>
+					<input type="text" name="Classiccar" placeholder="Classic Car" required>
+					<button type="submit">SUBMIT</button>
 				</form>
-			</section>	
+			</section>
+		</main>	
+		<footer>
+			<p>Belair footer</p>
+		</footer>
 		</body>
 		</html>
 
