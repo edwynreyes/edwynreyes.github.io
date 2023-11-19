@@ -8,7 +8,12 @@ body{
     background: green;
 }
 
-
+.header{
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
 .canvas {
     width: 350px;
     height: 50px;
