@@ -13,6 +13,12 @@ body{
     padding: 20px;
     background-color: black;
     color: white;
+    border-top: 12px solid #fdb356;
+    border-left: 4px solid red;
+    border-right: 4px solid orange;
+    border-bottom: 4px solid pink;
+    justify-content: center;
+    object-fit: cover;
 }
 .canvas {
     width: 350px;
@@ -39,6 +45,7 @@ body{
     margin: 0;
     padding: 10px;
     background-color: green;
+    gap: 16px;
 
 }
 
