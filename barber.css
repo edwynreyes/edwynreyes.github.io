@@ -55,3 +55,7 @@ body{
     flex-wrap: wrap;
     background-color: red;
 }
+
+.label {
+    border: 3px solid black;
+}
