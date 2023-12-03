@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan And Kevyn Reyes - Barbershop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(36, 60, 32);
+        }
+
+        header {
+            background-color: #254;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: #910;
+            font-weight: bold;
+            
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const appointmentForm = document.getElementById("appointmentForm");
+            const dateInput = document.getElementById("date");
+            const timeInput = document.getElementById("time");
+            const confirmationMessage = document.getElementById("confirmationMessage");
+
+            const bookedAppointments = [];
+
+            appointmentForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const selectedDate = dateInput.value;
+                const selectedTime = timeInput.value;
+
+                // Check for double booking
+                if (isAppointmentAvailable(selectedDate, selectedTime)) {
+                    bookedAppointments.push({ date: selectedDate, time: selectedTime });
+
+                    // Send confirmation email (simulated)
+                    sendConfirmationEmail(selectedDate, selectedTime);
+
+                    confirmationMessage.textContent = `Appointment booked for ${selectedDate} at ${selectedTime}. Confirmation email sent.`;
+                } else {
+                    confirmationMessage.textContent = `Sorry, the selected date and time are not available. Please choose another time.`;
+                }
+            });
+
+            function isAppointmentAvailable(date, time) {
+                // Check if the selected date and time are available
+                const isAvailable = !bookedAppointments.some(appointment => {
+                    return appointment.date === date && appointment.time === time;
+                });
+
+                return isAvailable;
+            }
+
+            function sendConfirmationEmail(date, time) {
+                // Simulated confirmation email sending
+                console.log(`Confirmation email sent for appointment on ${date} at ${time}.`);
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Bryan And Kevyn Reyes - Barbershop</h1>
+    </header>
+
+    <nav>
+        <a href="https://twitter.com/" target="_blank"><button>Twitter</button></a>
+        <a href="https://www.instagram.com/" target="_blank"><button>Instagram</button></a>
+        <a href="https://www.facebook.comgit /" target="_blank"><button>facebook</button></a>
+        <a href="https://edwynreyes.github.io" target="_blank"><button>Hot Rods</button></a>
+    </nav>
+
+    <section>
+        <h2>Welcome to Our Barbershop!</h2>
+        <p>Experience top-notch barber services in a classy environment.</p>
+        <p>Contact us at: <a href="tel:562-218-7632">562-218-7632</a></p>
+    </section>
+    <section>
+        <h2>Make an Appointment</h2>
+        <form id="appointmentForm">
+            <label for="date">Select a date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Select a time:</label>
+            <input type="time" id="time" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+        <p id="confirmationMessage"></p>
+    </section>
+
+
+    <footer>
+        &copy; 2023 Bryan And Kevyn Reyes - Barbershop
+    </footer>
+
+</body>
+</html>
