@@ -53,3 +53,7 @@ table, th, td {
     font-weight: bold;
     color: white;
 }
+
+section{
+    background-color: rgb(42, 42, 118);
+}
