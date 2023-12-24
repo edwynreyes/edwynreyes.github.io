@@ -1,9 +1,12 @@
 
 body {
-    background-image: url(picture/jumpracer.jpg);
+    background-image: url(picture/fuego.jpg);
     font-family: western;
     padding: 20px;
     align-items: center;
+}
+#fuego.jpg{
+    transform: rotate(90deg);
 }
 h2 {
     font-size: 25px;
@@ -23,7 +26,7 @@ h1, h2, p {
 }
 .menu {
     width: 80%;
-    background-color: green;
+    background-color: rgb(green, green, blue);
     margin-left: auto;
     margin-right: auto;
     padding-right: 20px;
@@ -48,12 +51,6 @@ table, th, td {
     text-align: center;
     table-layout: fixed;
 }
-.selected {
-    background-color: blue;
-    font-weight: bold;
-    color: white;
-}
-
 section{
-    background-color: rgb(42, 42, 118);
+    background-color:black;
 }
