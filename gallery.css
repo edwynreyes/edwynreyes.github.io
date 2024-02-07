@@ -33,7 +33,7 @@
 }
 .navbar ul li a{  
     text-decoration: none;
-    color: rgb(176, 4, 202);
+    color: rgb(194, 173, 104);
     text-transform: uppercase;
 }
 .navbar ul li::after{
@@ -46,7 +46,7 @@
     bottom: -10px;
     transition: 1s;
 }
-.schedule{
+.game{
     width: 100%;
     position: absolute;
     top: 50%;
@@ -55,11 +55,25 @@
     color: #20bcd5;
 }
 body {
+    background-color: black;
     font-family: 'Handlee', cursive;
     font-size: 13pt;
     background-color: #efefef;
     padding: 10px;
     margin: 0;
+}
+#text {
+    background-color: black;
+    color: #ffffff;
+    padding: 10px;
+}
+#game{
+    max-width: 500px;
+    max-height: 400px;
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 30px auto 0px;
+    padding: 10px;
 }
 h1 {
     font-size: 15pt;
@@ -152,7 +166,7 @@ iframe, audio {
 hr {
     border: 0;
     height: 1px;
-    background: #f36f48;
+    background: #84ff8c;
 }
 form {
     text-align: center;

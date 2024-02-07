@@ -22,65 +22,32 @@
                     <li><a href="brooklyn.html">Brooklyn</a></li>
                 </ul>
             </div>
-        <div class="schedule"></div>
-            <h1><span>My Schedule</span></h1>
-            <table>
-                <tr>
-                    <th></th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thurday</th>
-                    <th>Friday</th>
-                    <th>Saturday</th>
-                </tr>
-                <tr>
-                    <td> 9-10 </td>
-                    <td class="selected">Learn</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>9-10</td>
-                    <td></td>
-                    <td class="selected">Practice</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1-1:30</td>
-                    <td></td>
-                    <td></td>
-                    <td class="selected">Play</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3:45-5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="selected">Code</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6-6:15</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="selected">Discuss</td>
-                    <td></td>
-                </tr>
-            </table>
+
+        
+        <div id="game">
+            <div id="stats">
+                <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+                <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
+                <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+            </div>
+            <div id="controls">
+                <button id="button1">Go to Store</button>
+                <button id="button2">Go to cave</button>
+                <button id="button3">Fight</button>
+            </div>
+            <div id="monsterStats">
+                <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+                <span class="stat">Health: <strong><span id="monsterHEalth"></span></strong></span>
+            </div>
+            <div id="text">
+                Welcome! You must defeat the Dragon!
+            </div>
         </div>
+        <script src="./gallery.js"></script>
+            
+        
+
+
         <hr>
         <div class="photos">
             <div class="">
